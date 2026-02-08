@@ -3,7 +3,7 @@
 
 ## Overview
 
-Randori External Attack Surface Management (EASM) by IBM for Splunk provides full visibility into an organization’s externally exposed digital footprint using the Rabdori EASM APIs.
+Randori External Attack Surface Management (EASM) by IBM for Splunk provides full visibility into an organization’s externally exposed digital footprint using the Randori EASM APIs.
 
 This Splunk App enables security teams to **discover, monitor, analyze, and operationalize external attack surface data** directly in Splunk—without relying on the Randori External Attack Surface Management (EASM) portal User Interface.
 
