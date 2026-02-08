@@ -1,27 +1,53 @@
 ```mermaid
 flowchart TD
-    Service["Service\nid\nservice_id"]
-    Target["Target\nid\nservice_id"]
-    AllDetectionsForTarget["AllDetectionsForTarget\nhostname_id\nid\nip_id\nservice_id\ntarget_id"]
-    IpsForService["IpsForService\nid\nip_id\nservice_id"]
-    IpsForHostname["IpsForHostname\nid\nhostname_id\nip_id"]
-    Ip["Ip\nid"]
-    Hostname["Hostname\nid"]
-    HostnamesForIP["HostnamesForIP\nid\nhostname_id\nip_id"]
-    IpsForNetwork["IpsForNetwork\nid\nip_id\nnetwork_id"]
-    Network["Network\nid"]
-    PortsForIp["PortsForIp\nid\nip_id"]
+    Service["Service
+id
+service_id"]
+    Target["Target
+id
+service_id"]
+    AllDetectionsForTarget["AllDetectionsForTarget
+hostname_id
+id
+ip_id
+service_id
+target_id"]
+    IpsForService["IpsForService
+id
+ip_id
+service_id"]
+    IpsForHostname["IpsForHostname
+id
+hostname_id
+ip_id"]
+    Ip["Ip
+id"]
+    Hostname["Hostname
+id"]
+    HostnamesForIP["HostnamesForIP
+id
+hostname_id
+ip_id"]
+    IpsForNetwork["IpsForNetwork
+id
+ip_id
+network_id"]
+    PortsForIp["PortsForIp
+id
+ip_id"]
+    Network["Network
+id"]
 
-    %% Relationships (as plain arrows matching screenshot)
+    Service --> IpsForService
     Service --> Target
     Target --> AllDetectionsForTarget
-    Service --> AllDetectionsForTarget
     AllDetectionsForTarget --> Hostname
+    AllDetectionsForTarget --> IpsForHostname
     AllDetectionsForTarget --> Ip
     IpsForService --> Ip
     IpsForHostname --> Ip
-    Ip --> HostnamesForIP
     IpsForNetwork --> Ip
     Network --> IpsForNetwork
     Ip --> PortsForIp
+    Ip --> HostnamesForIP
 
