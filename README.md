@@ -1,3 +1,5 @@
+![Randori Logo](docs/images/randori_logo.jpg)
+
 # Randori EASM by IBM For Splunk App
 
 
